@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Support Developer</title>
+  <meta name="description" content="Support indie tools and development.">
+  
+  <!-- Modern Typography: Inter -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  
+  <!-- Tailwind CSS via CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  
+  <!-- Tailwind Configuration for Custom Aesthetics -->
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['Inter', 'sans-serif'],
+          },
+          colors: {
+            slate: {
+              850: '#151e2e',
+              900: '#0f172a',
+            }
+          },
+          animation: {
+            'blob': 'blob 7s infinite',
+            'fade-in': 'fadeIn 0.8s ease-out forwards',
+            'slide-up': 'slideUp 0.8s ease-out forwards',
+          },
+          keyframes: {
+            blob: {
+              '0%': { transform: 'translate(0px, 0px) scale(1)' },
+              '33%': { transform: 'translate(30px, -50px) scale(1.1)' },
+              '66%': { transform: 'translate(-20px, 20px) scale(0.9)' },
+              '100%': { transform: 'translate(0px, 0px) scale(1)' },
+            },
+            fadeIn: {
+              '0%': { opacity: '0' },
+              '100%': { opacity: '1' },
+            },
+            slideUp: {
+              '0%': { opacity: '0', transform: 'translateY(20px)' },
+              '100%': { opacity: '1', transform: 'translateY(0)' },
+            }
+          }
+        }
+      }
+    }
+  </script>
+
+  <!-- Custom CSS for specific needs -->
+  <link rel="stylesheet" href="css/styles.css">
+  
+  <!-- Phosphor Icons for crisp minimal icons -->
+  <script src="https://unpkg.com/@phosphor-icons/web"></script>
+</head>
+
+<body class="bg-[#0f172a] text-[#f8fafc] font-sans antialiased min-h-screen relative overflow-x-hidden selection:bg-indigo-500/30">
+
+  <!-- Aesthetic Ambient Background Blobs -->
+  <div class="fixed inset-0 overflow-hidden pointer-events-none z-0 flex justify-center items-center">
+    <div class="absolute top-1/4 -left-1/4 w-96 h-96 bg-indigo-600/20 rounded-full mix-blend-screen filter blur-[100px] animate-blob"></div>
+    <div class="absolute bottom-1/4 -right-1/4 w-96 h-96 bg-purple-600/20 rounded-full mix-blend-screen filter blur-[100px] animate-blob animation-delay-2000"></div>
+    <div class="absolute -bottom-32 left-1/2 w-96 h-96 bg-blue-600/20 rounded-full mix-blend-screen filter blur-[100px] animate-blob animation-delay-4000"></div>
+    
+    <!-- Grain overlay for texture -->
+    <div class="absolute inset-0 opacity-[0.03] bg-[url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI0IiBoZWlnaHQ9IjQiPjxyZWN0IHdpZHRoPSI0IiBoZWlnaHQ9IjQiIGZpbGw9IiNmZmYiIGZpbGwtb3BhY2l0eT0iMC4wNSIvPjwvc3ZnPg==')]"></div>
+  </div>
+
+  <!-- Main Container -->
+  <main class="relative z-10 max-w-3xl mx-auto px-6 py-16 md:py-24 flex flex-col items-center justify-center min-h-[90vh]">
+    
+    <!-- Dynamic Hero Section -->
+    <header class="text-center w-full max-w-2xl mb-16 animate-fade-in group">
+      <div class="relative w-24 h-24 sm:w-28 sm:h-28 mx-auto mb-8 rounded-3xl bg-white/5 border border-white/10 backdrop-blur-md shadow-2xl flex items-center justify-center transition-all duration-500 hover:scale-105 hover:bg-white/10 hover:shadow-indigo-500/20 overflow-hidden group-hover:rotate-3">
+        <!-- SVG container, will be swapped dynamically -->
+        <div id="app-icon-container" class="text-5xl text-indigo-400 transition-colors duration-300">
+           <i class="ph ph-star"></i>
+        </div>
+      </div>
+      
+      <h1 id="hero-heading" class="text-4xl md:text-5xl lg:text-6xl font-black tracking-tight mb-4 text-transparent bg-clip-text bg-gradient-to-r from-white to-slate-400 transition-all duration-300">
+        Support Indie Dev
+      </h1>
+      
+      <p id="hero-subheading" class="text-lg md:text-xl text-slate-400 max-w-lg mx-auto leading-relaxed">
+        A tiny tool built with passion. No ads, no tracking.
+      </p>
+    </header>
+
+    <!-- Sponsorship Cards - Glassmorphism Layout -->
+    <section class="w-full grid grid-cols-1 gap-6 mb-16 animate-slide-up max-w-sm" style="animation-delay: 0.2s;">
+      
+      <!-- Global Card: Ko-fi -->
+      <a href="https://ko-fi.com/startover205" target="_blank" rel="noopener noreferrer" 
+         class="group relative overflow-hidden rounded-3xl bg-white/5 border border-white/10 backdrop-blur-md p-8 transition-all duration-300 hover:bg-white/[0.08] hover:border-[#FF5E5B]/30 hover:-translate-y-1 hover:shadow-[0_8px_30px_rgb(0,0,0,0.12)] hover:shadow-[#FF5E5B]/10 flex flex-col items-center justify-center text-center">
+        <div class="w-16 h-16 rounded-full bg-gradient-to-br from-[#FF5E5B] to-[#e0403d] flex items-center justify-center mb-6 shadow-lg shadow-[#FF5E5B]/20 transition-transform duration-300 group-hover:scale-110">
+          <i class="ph-fill ph-coffee text-2xl text-white"></i>
+        </div>
+        <h3 class="text-xl font-bold mb-2">Support on Ko-fi</h3>
+        <p class="text-sm text-slate-400 leading-relaxed mb-6">One-time support via card.<br>No account needed.</p>
+        <div class="px-6 py-2.5 rounded-full bg-white/10 text-white font-medium text-sm transition-colors group-hover:bg-[#FF5E5B] w-full inline-flex items-center justify-center gap-2">
+          Buy a Coffee <i class="ph-bold ph-arrow-right"></i>
+        </div>
+      </a>
+
+      <!-- Local Card: LINE Pay (hidden until LINE Pay is set up) -->
+      <div hidden>
+        <div class="w-16 h-16 rounded-full bg-gradient-to-br from-[#06C755] to-[#04a044] flex items-center justify-center mb-6 shadow-lg shadow-[#06C755]/20 transition-transform duration-300 group-hover:scale-110">
+          <i class="ph-fill ph-wallet text-2xl text-white"></i>
+        </div>
+        <h3 class="text-xl font-bold mb-2">LINE Pay (TW)</h3>
+        <p class="text-sm text-slate-400 leading-relaxed mb-6">Scan the QR code directly<br>with your LINE app.</p>
+        
+        <!-- QR Code Container - High Contrast for Scannability -->
+        <div class="p-3 bg-white rounded-2xl shadow-inner transition-transform duration-300 group-hover:scale-105">
+          <!-- Placeholder QR Code - Replace src with actual QR -->
+          <img src="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=linepay&bgcolor=ffffff&color=0f172a" 
+               alt="LINE Pay QR Code" 
+               class="w-32 h-32 rounded-lg object-cover" />
+        </div>
+      </div>
+
+    </section>
+
+    <!-- Dynamic "Why Support?" Text Area -->
+    <section class="w-full max-w-2xl bg-gradient-to-br from-slate-800/40 to-slate-900/40 border border-slate-700/50 rounded-2xl p-8 mb-16 relative overflow-hidden animate-slide-up" style="animation-delay: 0.4s;">
+      <div class="absolute top-0 right-0 p-6 opacity-10">
+         <i class="ph-fill ph-quotes text-6xl text-slate-400"></i>
+      </div>
+      <h3 class="text-sm font-semibold uppercase tracking-widest text-indigo-400 mb-4 flex items-center gap-2">
+        <i class="ph-bold ph-info"></i> Why Support?
+      </h3>
+      <p id="why-support-text" class="text-base md:text-lg text-slate-300 leading-relaxed relative z-10 transition-opacity duration-300">
+        Your support helps keep the servers running and encourages me to build more free, open tools for the community.
+      </p>
+    </section>
+
+  </main>
+
+  <!-- Footer & Cross Promotion -->
+  <footer class="w-full border-t border-white/5 bg-slate-900/50 backdrop-blur-md relative z-10 animate-fade-in" style="animation-delay: 0.6s;">
+    <div class="max-w-3xl mx-auto px-6 py-12 flex flex-col items-center">
+      
+
+      <!-- Links & Copyright -->
+      <div class="flex flex-col md:flex-row items-center justify-between w-full gap-6">
+        <div class="flex items-center gap-6">
+          <a href="https://github.com/startover205" target="_blank" rel="noopener noreferrer" class="text-slate-400 hover:text-white transition-colors flex items-center gap-2 text-sm">
+            <i class="ph-fill ph-github-logo text-lg"></i> GitHub
+          </a>
+        </div>
+        
+        <p class="text-sm text-slate-500 flex items-center gap-1">
+          Made with <i class="ph-fill ph-heart text-rose-500 animate-pulse"></i> by <span class="text-slate-300 font-medium ml-1">Sam Yang</span>
+        </p>
+      </div>
+
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
