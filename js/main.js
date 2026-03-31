@@ -15,7 +15,7 @@ document.addEventListener('DOMContentLoaded', () => {
             whySupport: 'Your support helps keep the servers running and encourages me to build more free, open tools for the community.'
         },
         'gemini_delete': {
-            name: 'Gemini Quick Delete',
+            name: 'Delete Shortcut for Gemini™',
             // Using a sparkle icon for Gemini, styled with Google Gemini-esque colors
             iconHTML: '<i class="ph-fill ph-sparkle text-blue-400 drop-shadow-[0_0_15px_rgba(96,165,250,0.6)]"></i>',
             whySupport: 'Covering the maintenance of UI hotfixes.'
