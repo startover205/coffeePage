@@ -17,7 +17,7 @@ document.addEventListener('DOMContentLoaded', () => {
         'gemini_delete': {
             name: 'Delete Shortcut for Gemini™',
             // Using a sparkle icon for Gemini, styled with Google Gemini-esque colors
-            iconHTML: '<i class="ph-fill ph-sparkle text-blue-400 drop-shadow-[0_0_15px_rgba(96,165,250,0.6)]"></i>',
+            iconHTML: '<img src="assets/gemini-delete-icon.png" alt="Delete Shortcut for Gemini™" class="w-14 h-14 rounded-lg object-contain drop-shadow-[0_0_15px_rgba(96,165,250,0.4)]">',
             whySupport: 'Covering the maintenance of UI hotfixes.'
         }
     };
