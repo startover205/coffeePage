@@ -19,6 +19,11 @@ document.addEventListener('DOMContentLoaded', () => {
             // Using a sparkle icon for Gemini, styled with Google Gemini-esque colors
             iconHTML: '<img src="assets/gemini-delete-icon.png" alt="Delete Shortcut for Gemini™" class="w-14 h-14 rounded-lg object-contain drop-shadow-[0_0_15px_rgba(96,165,250,0.4)]">',
             whySupport: 'Covering the maintenance of UI hotfixes.'
+        },
+        'shopee_checkout': {
+            name: '自動完成訂單助手 (蝦皮版)',
+            iconHTML: '<i class="ph-fill ph-shopping-bag text-orange-500 drop-shadow-[0_0_15px_rgba(238,77,45,0.6)]"></i>',
+            whySupport: '致力於提升蝦皮購物體驗，專為台灣用戶優化。您的支持能幫助我持續開發與維護這項工具。'
         }
     };
 
