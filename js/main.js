@@ -33,7 +33,7 @@ document.addEventListener('DOMContentLoaded', () => {
         },
         'shopee_checkout': {
             name: '自動完成訂單助手 (蝦皮版)',
-            iconHTML: '<i class="ph-fill ph-shopping-bag text-orange-500 drop-shadow-[0_0_15px_rgba(238,77,45,0.6)]"></i>',
+            iconHTML: '<img src="assets/shopee-checkout-icon.png" alt="自動完成訂單助手 (蝦皮版)" class="w-14 h-14 rounded-lg object-contain drop-shadow-[0_0_15px_rgba(238,77,45,0.4)]">',
             heroHeading: (name) => `支持 <span class="text-transparent bg-clip-text bg-gradient-to-r from-orange-400 via-red-400 to-pink-400 drop-shadow-sm">${name}</span> 延續發展`,
             heroSubheading: '一個充滿熱情的個人開發作品。無廣告、不追蹤。',
             kofiTitle: '在 Ko-fi 上提供支持',
